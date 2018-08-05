@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sum_layout">
+
+    <Button
+        android:id="@+id/add_fund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加新资金"/>
+
+</RelativeLayout>

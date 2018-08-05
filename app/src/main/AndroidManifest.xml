@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tianlin.currencyconverter">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        tools:replace="android:label"
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="汇率计算"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:label="资金换算器">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Summation"
+            android:label="资金求和"/>
+        <activity android:name=".Fund"
+            android:label="计算结果"/>
+        <activity android:name=".ChoseCurrency"
+            android:label="新建资金"/>
+        <activity android:name=".ChoseToCurrency"
+            android:label="选择换算币种"/>
+        <activity android:name=".RateCheck"
+            android:label="汇率查询"/>
+        <activity android:name=".ShowRate"
+            android:label="汇率"></activity>
+    </application>
+
+</manifest>
